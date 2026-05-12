@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrolan Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="layar-nama" id="layar-nama">
+        <div class="kotak-nama">
+            <h2>Masuk ke Ruang Obrolan</h2>
+            <input type="text" id="input-nama" placeholder="Tulis nama kamu di sini..." autocomplete="off">
+            <button id="tombol-masuk">Masuk Sekarang</button>
+        </div>
+    </div>
+
+    <div class="aplikasi" id="aplikasi" style="display: none;">
+        <div class="kepala-obrolan">
+            <div class="info-ruang">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3>Ruang Umum</h3>
+                    <p id="status">Menghubungkan...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="isi-obrolan" id="isi-obrolan"></div>
+
+        <form class="form-kirim" id="form-kirim">
+            <input type="text" id="pesan-kirim" placeholder="Ketik pesanmu..." autocomplete="off">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <script src="skrip.js"></script>
+</body>
+</html>
