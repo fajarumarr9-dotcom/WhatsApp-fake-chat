@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #d2dbdc;
+    height: 100vh;
+}
+
+.layar-nama {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.kotak-nama {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.kotak-nama h2 {
+    margin-bottom: 20px;
+    color: #111b21;
+}
+
+.kotak-nama input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.kotak-nama button {
+    width: 100%;
+    padding: 12px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.kotak-nama button:hover {
+    background-color: #128c7e;
+}
+
+.aplikasi {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #efeae2;
+    background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm32 32c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM8 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm32-32c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6z" fill="%23d0d9de" fill-opacity="0.4" fill-rule="evenodd"/%3E%3C/svg%3E');
+}
+
+.kepala-obrolan {
+    height: 60px;
+    background-color: #f0f2f5;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.info-ruang {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-ruang i {
+    font-size: 28px;
+    color: #54656f;
+}
+
+.info-ruang h3 {
+    font-size: 16px;
+    color: #111b21;
+}
+
+.info-ruang p {
+    font-size: 12px;
+    color: #667781;
+}
+
+.isi-obrolan {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.pesan {
+    margin-bottom: 12px;
+    max-width: 75%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.pesan.keluar {
+    background-color: #d9fdd3;
+    margin-left: auto;
+}
+
+.pesan.masuk {
+    background-color: white;
+    margin-right: auto;
+}
+
+.nama-pengirim {
+    font-size: 12px;
+    color: #128c7e;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.teks-pesan {
+    font-size: 14px;
+    color: #111b21;
+}
+
+.waktu-pesan {
+    font-size: 10px;
+    color: #667781;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.form-kirim {
+    display: flex;
+    padding: 8px 16px;
+    background-color: #f0f2f5;
+    gap: 8px;
+}
+
+.form-kirim input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-kirim button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form-kirim button:hover {
+    background-color: #128c7e;
+}
